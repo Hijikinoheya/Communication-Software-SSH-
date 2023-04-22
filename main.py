@@ -4,7 +4,7 @@ import logging.config
 logging.config.fileConfig("./conf/logging.conf")
 logger = logging.getLogger()
 
-#logger.debug("ログに出力")
+#logger.debug("")
 logger.warning("This Version are Beta.")
 #logger.error("")
 logger.info("Hello! This app version are 0.13")
@@ -34,3 +34,6 @@ with paramiko.SSHClient() as client:
     # End of connection.
     for line in stdout:
         print(line, end='')
+
+
+        
