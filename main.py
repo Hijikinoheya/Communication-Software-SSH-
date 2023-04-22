@@ -1,4 +1,13 @@
 import paramiko
+import logging.config
+
+logging.config.fileConfig("./conf/logging.conf")
+logger = logging.getLogger()
+
+#logger.debug("ログに出力")
+logger.warning("This Version are Beta.")
+#logger.error("")
+logger.info("Hello! This app version are 0.13")
 
 with paramiko.SSHClient() as client:
     # Server info
