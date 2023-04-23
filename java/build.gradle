@@ -1,0 +1,25 @@
+dependencies {
+    compile group: 'com.github.oshi', name: 'oshi-core', version: '3.13.0'
+}
+var si = new SystemInfo();
+var os = si.getOperatingSystem();
+System.out.println(os.getFamily()); 
+System.out.println(os.getVersion().getVersion());
+System.out.println(os.getManufacturer()); 
+System.out.println(os.getBitness()); 
+System.out.println(os.getVersion().getCodeName());
+var hard = si.getHardware();
+var cpu = hard.getProcessor();
+System.out.println(cpu.getPhysicalProcessorCount()); 
+System.out.println(cpu.getLogicalProcessorCount()); 
+System.out.println(cpu.getName());  
+System.out.println(cpu.getIdentifier());
+System.out.println(cpu.getVendor()); 
+System.out.println(cpu.getContextSwitches()); 
+System.out.println(cpu.getSystemLoadAverage());  
+var hard = si.getHardware();
+var memory = hard.getMemory();
+System.out.println(memory.getTotal());
+System.out.println(memory.getSwapTotal()); 
+System.out.println(memory.getPageSize()); 
+System.out.println(memory.getAvailable());  
