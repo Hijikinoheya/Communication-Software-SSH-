@@ -27,7 +27,6 @@ with paramiko.SSHClient() as client:
 
     # SSH keyfile
     client.connect(hostname=HOSTNAME, port=22, username=USERNAME, key_filename=KEY_FILENAME)
-jkiuj
     # thrown command
     stdin, stdout, stderr = client.exec_command(LINUX_COMMAND)
 
