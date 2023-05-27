@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+      "serve": "^13.0.2"
+    },
+    "name": "Communication-Software-SSH-",
+    "version": "1.0.0",
+    "main": "main.py",
+    "repository": "https://github.com/Hisaki714/Communication-Software-SSH-.git",
+    "author": "hisaki714 <hisaki714@yahoo.co.jp>",
+    "license": "",
+    "scripts": {
+      "start": "serve"
+    }
+  }
+  
