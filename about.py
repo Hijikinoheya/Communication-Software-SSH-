@@ -1,6 +1,6 @@
 import tkinter 
 import sys
-from time import sleep
+from time import sleep;
 import webbrowser
 
 root = tkinter.Tk()
